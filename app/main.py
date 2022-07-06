@@ -35,6 +35,14 @@ pa.include_router(user.router)
 pa.include_router(auth.router)
 pa.include_router(vote.router)
 
+#GIT Push Steps i Used
+# git config --global user.email olusegunjoseph66@yahoo.co.uk
+# git config --global user.name  olusegunjoseph66
+# git commit -m "First Commit"
+# git branch -M main
+# git remote add origin https://github.com/olusegunjoseph66/JoseePythonProj.git
+# git push -u origin main
+
 
 @pa.get("/")
 def root():
