@@ -48,20 +48,20 @@ pa.include_router(vote.router)
 def root():
     return {"message": "Hello World pushing out to ubuntu"}
 
-while True:
+# while True:
 
-    try:
-        # conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres',
-        #                         password='123456', cursor_factory=RealDictCursor)
-        conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres',
-                       password='123456', cursor_factory=RealDictCursor)
-        cursor = conn.cursor()
-        print("Database connection was succesfull!")
-        break
-    except Exception as error:
-        print("Connecting to database failed")
-        print("Error: ", error)
-        time.sleep(2)
+#     try:
+#         # conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres',
+#         #                         password='123456', cursor_factory=RealDictCursor)
+#         conn = psycopg2.connect(host='localhost', database='fastapi', user='postgres',
+#                        password='123456', cursor_factory=RealDictCursor)
+#         cursor = conn.cursor()
+#         print("Database connection was succesfull!")
+#         break
+#     except Exception as error:
+#         print("Connecting to database failed")
+#         print("Error: ", error)
+#         time.sleep(2)
 
 
 # @pa.get("/posts")
